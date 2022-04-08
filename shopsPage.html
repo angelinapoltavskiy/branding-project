@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopsPage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--Header section includes title and navbar-->
+    <div class="navbar">
+        <nav id="hamnav">
+            <div class="headerBranding">
+                <div class="name">
+                    <h1>Branding </h1>
+                </div>
+                </br>
+
+            </div>
+            <!-- (A) MENU WRAPPER -->
+
+            <!-- (B) THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+
+
+            <!-- (C) MENU ITEMS -->
+            <div id="hamitems">
+                <a href="index.html">HOME</a>
+                <a href="shopsPage.html">SHOPS</a>
+                <a href="about.html">ABOUT US</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header" id="missionStatement">
+        <h2>Eradicating fast fashion through increasing access to resources for sustainable fashion.</h2>
+    </div>
+
+    </br>
+
+    </div>
+
+    <div class="shops-content">
+
+        <div class="filterBar">
+
+            <div class="shops-wrap">
+                <h1>Filters</h1>
+                <p><strong>Category:</strong></p>
+                <form>
+                    <label><input type="checkbox" name="shop-category" value="childrensApparel" id="childrensApparel" />
+                        Children's Apparel</label><br>
+                    <label><input type="checkbox" name="shop-category" value="denim" id="denim" /> Denim</label><br>
+                    <label><input type="checkbox" name="shop-category" value="wardrobeEssentials"
+                            id="wardrobeEssentials" /> Wardrobe Essentials</label><br>
+                    <label><input type="checkbox" name="shop-category" value="outerwear" id="outerwear" />
+                        Outerwear</label><br>
+                    <label><input type="checkbox" name="shop-category" value="handbags" id="handbags" />
+                        Handbags</label><br>
+                    <label><input type="checkbox" name="shop-category" value="activewear" id="activewear" />
+                        Activewear</label><br>
+                    <label><input type="checkbox" name="shop-category" value="adultApparel" id="adultApparel" /> Adult
+                        Apparel</label>
+                </form>
+
+                <p><strong>Country of origin:</strong></p>
+                <form>
+                    <div><input type="checkbox" name="shop-origin" value="usa" id="usa" /> USA </div>
+                    <div><input type="checkbox" name="shop-origin" value="france" id="france" /> France
+                    </div>
+                    <div><input type="checkbox" name="shop-origin" value="uk" id="uk" /> UK
+                    </div>
+                    <div><input type="checkbox" name="shop-origin" value="germany" id="germany" /> Germany
+                    </div>
+                    <div><input type="checkbox" name="shop-origin" value="australia" id="australia" /> Australia </div>
+                    <label><input type="checkbox" name="shop-origin" value="canada" id="canada" />
+                        Canada</label>
+                    <div><input type="checkbox" name="shop-origin" value="denmark" id="denmark" /> Denmark
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="store-cards">
+
+            <div class="searchBar">
+                <input type="text" id="myInput" onkeyup="mySearchFunction()" placeholder="Search"> <button
+                    type="submit"><i class="fa fa-search"></i></button>
+
+            </div>
+
+            <ul id="stateList">
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="patagonia" data-category="activewear usa">
+                        <a href="patagonia.html"><img src="imgs/logos/patagonia.png" alt="patagonia clothes" /></a>
+                        <h1>Patagonia</h1>
+                    </div>
+                </li>
+            </div>
+
+            <div class="column">
+                <li>
+                    <div class="card shop" data-id="levis" data-category="usa handbags childrensApparel">
+                        <a href="FairTradeWinds.html">
+                            <img src="imgs/logos/fairWinds.png" alt="fair trade winds clothes" /></a>
+                        <h1>Fair Trade Winds</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="reformation" data-category="usa womensApparel">
+                        <a href="reformation.html">
+                            <img src="imgs/logos/reformation.png" alt="reformation clothes" /></a>
+                        <h1>Reformation</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="mate" data-category="usa childrensApparel womensApparel">
+                        <a href="MateTheLabel.html">
+                            <img src="imgs/logos/mate.png" alt="mate the label clothes" /> </a>
+                        <h1>MATE the label</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="able" data-category="usa womensApparel">
+                        <a href="ABLE.html">
+                            <img src="imgs/logos/able.png" alt="able clothes" /> </a>
+                        <h1>ABLE</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="sezane" data-category="france adultApparel">
+                        <a href="sezane.html">
+                            <img src="imgs/logos/sezane.png" alt="sezane clothes" /> </a>
+                        <h1>Sezane</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="able"
+                        data-category="usa outerwear childrensApparel wardrobeEssentials">
+                        <a href="tentree.html">
+                            <img src="imgs/logos/tentree.png" alt="tentree clothes" /></a>
+                        <h1>Tentree</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="mate" data-category="canada handbags">
+                        <a href="svala.html">
+                            <img src="imgs/logos/svala.png" alt="svala clothes" /></a>
+                        <h1>Svala</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="yesFriends" data-category="wardrobeEssentials uk">
+                        <a href="YesFriends.html">
+                            <img src="imgs/logos/yesfriends.png" alt="yes friends clothes" /></a>
+                        <h1>Yes Friends</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="littleEmp" data-category="australia childrensApparel">
+                        <a href="LittleEmperor.html">
+                            <img src="imgs/logos/littlemp.png" alt="little emperor clothes" /> </a>
+                        <h1>Little Emperor</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="senseOrg" data-category="germany childrensApparel">
+                        <a href="SenseOrganics.html">
+                            <img src="imgs/logos/sense.png" alt="sense organics clothes" /> </a>
+                        <h1>Sense Organics</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="organicBasics" data-category="activewear denmark">
+                        <a href="OrganicBasics.html">
+                            <img src="imgs/logos/organic.png" alt="organic basics clothes" /> </a>
+                        <h1>Organic Basics</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="pact" data-category="wardrobeEssentials usa">
+                        <a href="pact.html">
+                            <img src="imgs/logos/pact.png" alt="pact clothes" /></a>
+                        <h1>Pact</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="wickerWings" data-category="handbags uk">
+                        <a href="WickerWings.html">
+                            <img src="imgs/logos/wicker.png" alt="wicker wings bags" /></a>
+                        <h1>Wicker Wings</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="maliaDesigns" data-category="handbags usa">
+                        <a href="MaliaDesigns.html">
+                            <img src="imgs/logos/malia.png" alt="malia design bags" /></a>
+                        <h1>Malia Design</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="charlesKeith" data-category="singapore handbags">
+                        <a href="Charles&Keith.html">
+                            <img src="imgs/logos/charles&kieth.png" alt="charles & keith bags" /> </a>
+                        <h1>Charles & Keith</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="monsoon"
+                        data-category="uk wardrobeEssentials outerwear childrensApparel">
+                        <a href="monsoon.html">
+                            <img src="imgs/logos/monsoon.png" alt="monsoon clothes" /></a>
+                        <h1>Monsoon</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="pixieMood" data-category="canada handbags">
+                        <a href="PixieMood.html">
+                            <img src="imgs/logos/pixie.png" alt="pixie mood clothes" /></a>
+                        <h1>Pixie Mood</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="warpWeft" data-category="denim usa">
+                        <a href="WarpWeft.html">
+                            <img src="imgs/logos/warp.png" alt="warp plus weft clothes" /></a>
+                        <h1>Warp + Weft</h1>
+                    </div>
+                </li>
+                </div>
+
+                <div class="column">
+                <li>
+                    <div class="card shop" data-id="levis" data-category="usa womensApparel denim">
+                        <a href="levis.html">
+                            <img src="imgs/logos/levis.jpg" alt="levi's clothes" /></a>
+                        <h1>Levis</h1>
+                    </div>
+                </li>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+<footer class="footer">
+    <p>&copy; Branding 2021</p>
+</footer>
+
+
+</html>

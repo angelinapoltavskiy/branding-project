@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header section includes title and navbar-->
+    <nav id="hamnav">
+        <div class="headerBranding">
+            <a href="index.html">
+                <div class="name">
+                    <h1>Branding </h1>
+                </div>
+            </a>
+        </div>
+
+        <!-- (A) MENU WRAPPER -->
+
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <!-- (C) MENU ITEMS -->
+        <div id="hamitems">
+            <a href="index.html">HOME</a>
+            <a href="shopsPage.html">SHOPS</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+    </nav>
+    <div class="header" id="missionStatement">
+        <h2>Eradicating fast fashion through increasing access to resources for sustainable fashion.</h2>
+    </div>
+
+    <div class="team">
+        <h1>MEET THE BRANDING TEAM!</h1>
+        <br>
+        <p>We are all passionate about fashion and helping the environment. <br> Relating to most, we have a lot of clothing in our closet but pay no mind to what happens to them when toss it out.
+            <br> Our goal is to inform more people about sustainable fashion options that benefits the fashion lovers and the environment.</p>
+    </div>
+
+    <div class="aboutcards">
+        <a target="_blank" href="https://www.linkedin.com/in/tala-tayebi/">
+            <div class="column">
+                <div class="card" href="">
+                    <img src="imgs/tala.jpg" alt="Tala Headshot" style="width:140px" class="cardimg">
+                    <h3>Tala Tayebi</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/vivianngu/">
+            <div class="column">
+                <div class="card" href="">
+                    <img src="imgs/viv.jpg" alt="Vivian Headshot" style="width:140px" class="cardimg">
+                    <h3>Vivian Nguyen</h3>
+                    <p>Visual Designer</p>
+                </div>
+            </div>
+        </a>
+
+        <a target="_blank" href="https://www.linkedin.com/in/angelina-poltavskiy">
+            <div class="column">
+                <div class="card" href="">
+                    <img src="imgs/AP.jpg" alt="Angelina Headshot" style="width:140px" class="cardimg">
+                    <h3>Angelina Poltavskiy</h3>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </a>
+
+        <a target="_blank" href="https://swalehamasude.myportfolio.com/">
+            <div class="column">
+                <div class="card" href="">
+                    <img src="imgs/swa.jpg" alt="Swaleha Headshot" style="width:140px" class="cardimg">
+                    <h3>Swaleha Masude</h3>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- contact us form -->
+    <div class="contactForm">
+        <h3>Contact Us!</h2>
+            <p>Have any questions, concerns or suggestions? Know of a sustainable brand you don't see on our site? </p>
+            <p>Feel free to let us know!</p>
+            <form action="https://formspree.io/f/xrgrvprk" method="POST">
+                <div class="contactforminput">
+                    <label>
+                        <p>Email:</p>
+                        <input type="email" name="_replyto">
+                    </label>
+                    <br>
+                    <label>
+                        <p>Your Message:</p>
+                        <textarea type="text" name="message"></textarea>
+                    </label>
+                </div>
+                <!-- your other form fields go here -->
+                <div class="contactformbutton">
+                    <button class="contactform" type="submit">Send</button>
+                </div>
+            </form>
+    </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+<footer class="footer">
+    <p>&copy; Branding 2021</p>
+</footer>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header section includes title and navbar-->
+    <nav id="hamnav">
+        <div class="headerBranding">
+            <a href="index.html">
+                <div class="name">
+                    <h1>Branding </h1>
+                </div>
+            </a>
+        </div>
+        <!-- (A) MENU WRAPPER -->
+
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <!-- (C) MENU ITEMS -->
+
+        <div id="hamitems">
+            <a href="index.html">HOME</a>
+            <a href="shopsPage.html">SHOPS</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+    </nav>
+    <div class="header" id="missionStatement">
+        <h2>Eradicating fast fashion through increasing access to resources for sustainable fashion.</h2>
+
+    </div>
+
+
+    <!--Intro section includes intro to site and some info on sustainability-->
+    <div class="intro">
+        <h1>Decrease waste,</h1>
+        <h1>find sustainable fashion.</h1>
+        </br>
+        <p>Don’t know where to start? We have a variety of stores you can choose from!</p>
+    </div>
+
+    <div>
+        <a href="shopsPage.html">
+            <button class="shops-btn">
+                Find Shops!
+            </button>
+        </a>
+    </div>
+
+    <!--Impact Cards-->
+    <div class="impact-cards">
+
+        <div class="card">
+            <h1>Fast Fashion Production Waste</h1>
+            </br>
+            <p>According to the world bank, less than 1% of used clothing is recycled into new clothes. This ends up producing an estimated 92 million tons of waste per year (Niinimäki, K., Peters, G., Dahlbo, H. et al, 2020).
+            </p>
+        </div>
+
+        <div class="card">
+            <h1>Large Foot Print in Environment</h1>
+            </br>
+            <p>From landfill, power and water consumption, fast fashion adds more toxins into our environment, affecting the health of those in the supply chain and increasing the rate at which global warming is developing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h1>Lack of Knowledge</h1>
+            </br>
+            <p>Even though some existing solutions exist, these existing solutions don’t address the issue of how consumers aren’t aware of researching the sustainability of their favorite brands.</p>
+        </div>
+    </div>
+
+    <!--Video and How you can help message-->
+    <div class="vid">
+        <iframe width="640" height="430" autostart="false" src="https://www.youtube.com/embed/mKPB0uW4cto">
+        </iframe>
+    </div>
+
+    <div class="helping-info-card">
+        <h1>HOW YOU CAN HELP</h1>
+        </br>
+        <p>With online shopping and fast fashion, it is easy to buy clothes that you end up with a mountain pile of that just go to waste. </p>
+        </br>
+        <p>Sustainable brands focus on quality, using materials that are made to lengthen the life cycle of their clothing as well as being kind to the environment. </p>
+        </br>
+        <p>Trends always come and go, instead get a timeless sustainable piece to create your own style.</p>
+    </div>
+
+    <!-- contact us form -->
+    <div class="contactForm">
+        <h3>Contact Us!</h2>
+            <p>Have any questions, concerns or suggestions? Know of a sustainable brand you don't see on our site? </p>
+            <p>Feel free to let us know!</p>
+            <form action="https://formspree.io/f/xrgrvprk" method="POST">
+                <div class="contactforminput">
+                    <label>
+                        <p>Email:</p>
+                        <input type="email" name="_replyto">
+                    </label>
+                    <br>
+                    <label>
+                        <p>Your Message:</p>
+                        <textarea type="text" name="message"></textarea>
+                    </label>
+                </div>
+                <!-- your other form fields go here -->
+                <div class="contactformbutton">
+                    <button class="contactform" type="submit">Send</button>
+                </div>
+            </form>
+    </div>
+
+</body>
+
+<footer class="footer">
+    <p>&copy; Branding 2021</p>
+</footer>
+
+</html>
